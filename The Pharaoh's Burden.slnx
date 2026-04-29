@@ -3,5 +3,5 @@
     <Platform Name="x64" />
     <Platform Name="x86" />
   </Configurations>
-  <Project Path="The Pharaoh's Burden.vcxproj" />
+  <Project Path="The Pharaoh's Burden.vcxproj" Id="8b2030e7-a331-4c43-9b5d-92bcb2eb5e5c" />
 </Solution>
