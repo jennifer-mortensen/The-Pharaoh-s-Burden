@@ -17,8 +17,8 @@ const std::string COLOR_PARSER_REPLY     = COLOR_BRIGHT_YELLOW;          ///< St
 const std::string COLOR_PLAYER_INPUT     = COLOR_BRIGHT_CYAN;            ///< Color of player command input.
 const std::string COLOR_ROOM_DESCRIPTION = COLOR_BRIGHT_YELLOW;          ///< Room description color.
 const std::string COLOR_ROOM_NAME        = COLOR_YELLOW;                 ///< Room name color.
-const std::string COLOR_SUBTITLE         = COLOR_BRIGHT_RED;             ///< Subtitle color (i.e. copyright, version).
-const std::string COLOR_TITLE            = COLOR_BRIGHT_RED;             ///< Title color.
+const std::string COLOR_SUBTITLE         = COLOR_YELLOW;                 ///< Subtitle color (i.e. copyright, version).
+const std::string COLOR_TITLE            = COLOR_YELLOW;                 ///< Title color.
 
 const std::string STYLE_PARSER_ERROR     = STYLE_NONE;                   ///< Parser response style on error (e.g. invalid command, invalid movement).
 const std::string STYLE_PARSER_REPLY     = STYLE_NONE;                   ///< Standard parser response style.
