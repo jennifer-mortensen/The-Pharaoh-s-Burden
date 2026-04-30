@@ -1,4 +1,6 @@
 #include "player.h"
 
-Player::Player(Room* startingRoom)
-	: currentRoom(startingRoom) {}
+// ============================================================
+// Constructors
+// ============================================================
+Player::Player(Room* startingRoom) : currentRoom(startingRoom) {}

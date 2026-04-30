@@ -1,6 +1,12 @@
-#include "Game.h"
+/**
+ * @file main.cpp
+ * @brief Entry point for Historia: The Pharaoh's Burden.
+ */
 
-int main() {
+#include "game.h"
+
+int main()
+{
     Game game;
     game.run();
     return 0;
