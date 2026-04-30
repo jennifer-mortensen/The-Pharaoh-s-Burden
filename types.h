@@ -25,4 +25,4 @@ enum class Direction { North, South, East, West, None };
  * @param input Player input string, e.g. "n", "north".
  * @return The corresponding Direction, or Direction::None if unrecognized.
  */
-Direction parseDirection(std::string input);
+Direction parse_direction(std::string input);

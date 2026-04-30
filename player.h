@@ -16,11 +16,11 @@
 class Player
 {
 public:
-    Room* currentRoom; ///< Pointer to the room the player is currently in.
+    Room* current_room; ///< Pointer to the room the player is currently in.
 
     /**
      * @brief Constructs a Player starting in the given room.
      * @param startingRoom Pointer to the room the player begins in.
      */
-    Player(Room* startingRoom);
+    Player(Room* starting_room);
 };

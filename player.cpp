@@ -3,4 +3,4 @@
 // ============================================================
 // Constructors
 // ============================================================
-Player::Player(Room* startingRoom) : currentRoom(startingRoom) {}
+Player::Player(Room* starting_room) : current_room(starting_room) {}

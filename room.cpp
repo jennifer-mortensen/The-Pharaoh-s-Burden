@@ -1,5 +1,6 @@
 #include <iostream>
 #include "room.h"
+#include "theme.h"
 #include "utils.h"
 
 // ============================================================
@@ -11,7 +12,7 @@ Room::Room(std::string id, std::string name, std::string description)
 // ============================================================
 // Public Methods
 // ============================================================
-void Room::printDescription()
+void Room::print_description()
 {
-	std::cout << styleText(name, COLOR_ROOM_NAME) << "\n" << styleText(description, COLOR_ROOM_DESCRIPTION) << "\n\n";
+	std::cout << style_text(name, theme::COLOR_ROOM_NAME) << "\n" << style_text(description, theme::COLOR_ROOM_DESCRIPTION) << "\n\n";
 }

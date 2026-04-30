@@ -36,5 +36,5 @@ public:
     /**
      * @brief Prints the room's name and description to the console.
      */
-    void printDescription();
+    void print_description();
 };

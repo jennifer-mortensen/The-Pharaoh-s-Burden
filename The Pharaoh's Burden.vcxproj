@@ -135,9 +135,10 @@
     <ClCompile Include="utils.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="styles.h" />
+    <ClInclude Include="ansi.h" />
     <ClInclude Include="game.h" />
     <ClInclude Include="player.h" />
+    <ClInclude Include="theme.h" />
     <ClInclude Include="types.h" />
     <ClInclude Include="room.h" />
     <ClInclude Include="utils.h" />

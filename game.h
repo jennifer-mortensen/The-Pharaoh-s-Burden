@@ -36,15 +36,15 @@ public:
      * @brief Parses and handles a single line of player input.
      * @param input Raw input string from the player.
      */
-    void handleInput(std::string input);
+    void handle_input(std::string input);
 private:
     /**
      * @brief Prints the game title, copyright, and version information to the console.
      */
-    void printHeader();
+    void print_header();
     /**
      * @brief Instantiates all rooms and connects their exits.
      * @return Pointer to the starting room.
      */
-    Room* generateRooms();
+    Room* generate_rooms();
 };

@@ -50,7 +50,10 @@
     <ClInclude Include="utils.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="styles.h">
+    <ClInclude Include="ansi.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="theme.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
