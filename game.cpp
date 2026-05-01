@@ -30,7 +30,7 @@ Game::Game() : player(nullptr)
 // ============================================================
 void Game::run()
 {
-	player.current_room->print_description();
+	player.current_room->print_room();
 
 	std::string input;
 
@@ -54,8 +54,8 @@ void Game::handle_input(std::string input)
     auto& exits = player.current_room->exits;
     if (exits.count(dir))
     {
-        player.current_room = exits[dir];
-        player.current_room->print_description();
+        player.current_room = exits[dir]->destination;
+        player.current_room->print_room();
     }
     else
     {
@@ -75,14 +75,14 @@ void Game::print_header()
 
 Room* Game::generate_rooms()
 {
-    Room* desert = new Room("desert", "The Desert", "You are standing in a vast desert. The sun beats down mercilessly. You see something remarkably queer to the north. A pyramid lies south.");
-    Room* pyramid = new Room("pyramid", "Pyramid Entrance", "You stand before the entrance to an ancient pyramid. The stone is worn smooth by centuries of sand. A vast desert lies to the north.");
-    Room* queer = new Room("queer", "Day's Room", "Day stands gayly before you. What is he even doing here? Quickly, escape to the south!");
+    Room* desert = new Room("desert", "The Desert", "You are standing in a vast desert. The sun beats down mercilessly.", "An expanse stretches endlessly.");
+    Room* pyramid = new Room("pyramid", "Pyramid Entrance", "You stand before the entrance to an ancient pyramid. The stone is worn smooth by centuries of sand.", "A pyramid looms high above you.");
+    Room* queer = new Room("queer", "Day's Room", "Day stands gayly before you. What is he even doing here?", "Something queer dances over there.");
 
-    desert->exits[Direction::North] = queer;
-    desert->exits[Direction::South] = pyramid;
-    pyramid->exits[Direction::North] = desert;
-    queer->exits[Direction::South] = desert;
+    desert->exits[Direction::North] = new Exit(queer);
+    desert->exits[Direction::South] = new Exit(pyramid);
+    pyramid->exits[Direction::North] = new Exit(desert);
+    queer->exits[Direction::South] = new Exit(desert, "A pyramid can be seen on the distant horizon.");
 
     rooms["desert"] = desert;
     rooms["pyramid"] = pyramid;

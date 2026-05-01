@@ -4,8 +4,15 @@
  */
 
 #pragma once
+#include <iostream>
 #include <string>
 #include "ansi.h"
+
+#ifdef _DEBUG
+	#define LOG_DEBUG(msg) std::cerr << "DEBUG: " << msg << "\n"
+#else
+	#define LOG_DEBUG(msg)
+#endif
 
  // ============================================================
  // Constants
