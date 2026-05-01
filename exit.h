@@ -22,13 +22,15 @@ class Exit
 public:
     Room* destination;   ///< Pointer to the room this exit leads to.
     std::string glimpse; ///< Optional glimpse description for this specific exit.
+    bool visible;        ///< Determines whether the exit can be seen from a glimpse.
 
     /**
      * @brief Constructs an Exit to the given destination with an optional glimpse.
      * @param destination Pointer to the destination room.
      * @param glimpse Optional short description of what lies in this direction.
+     * @param visible Determines whether the exit will return a glimpse. 
      */
-    Exit(Room* destination, std::string glimpse = "");
+    Exit(Room* destination, std::string glimpse = "", bool visible = true);
 
     /**
      * @brief Returns a glimpse description for this exit.
