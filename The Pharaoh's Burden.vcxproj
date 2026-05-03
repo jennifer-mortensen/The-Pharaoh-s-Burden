@@ -18,6 +18,25 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\ansi.h" />
+    <ClInclude Include="include\exit.h" />
+    <ClInclude Include="include\game.h" />
+    <ClInclude Include="include\player.h" />
+    <ClInclude Include="include\room.h" />
+    <ClInclude Include="include\theme.h" />
+    <ClInclude Include="include\types.h" />
+    <ClInclude Include="include\utils.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="src\exit.cpp" />
+    <ClCompile Include="src\game.cpp" />
+    <ClCompile Include="src\player.cpp" />
+    <ClCompile Include="src\room.cpp" />
+    <ClCompile Include="src\types.cpp" />
+    <ClCompile Include="src\utils.cpp" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>18.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
@@ -105,6 +124,7 @@
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp20</LanguageStandard>
+      <AdditionalIncludeDirectories>$(ProjectDir)include</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -126,25 +146,6 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <ClCompile Include="exit.cpp" />
-    <ClCompile Include="game.cpp" />
-    <ClCompile Include="main.cpp" />
-    <ClCompile Include="player.cpp" />
-    <ClCompile Include="room.cpp" />
-    <ClCompile Include="types.cpp" />
-    <ClCompile Include="utils.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="ansi.h" />
-    <ClInclude Include="exit.h" />
-    <ClInclude Include="game.h" />
-    <ClInclude Include="player.h" />
-    <ClInclude Include="theme.h" />
-    <ClInclude Include="types.h" />
-    <ClInclude Include="room.h" />
-    <ClInclude Include="utils.h" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

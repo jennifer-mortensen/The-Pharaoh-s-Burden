@@ -1,0 +1,51 @@
+{
+    "version": "1.0",
+    "zone": "talbruk",
+    "rooms":
+    [
+        {
+            "id": "inn_room",
+            "name": "Talbruk Inn Room",
+            "description": "You're in a room.",
+            "exits":
+            [
+                {
+                    "direction": "north",
+                    "destination": "talbruk:inn_upstairs",
+                    "glimpse": "A door opens to the north."
+                }
+            ]
+        },
+        {
+            "id": "inn_upstairs",
+            "name": "Talbruk Inn Upstairs",
+            "description": "You're in a hallway.",
+            "exits":
+            [
+                {
+                    "direction": "north",
+                    "destination": "talbruk:inn",
+                    "glimpse": "Stairs lead downward to the inn's lower floor."
+                },
+                {
+                    "direction": "south",
+                    "destination": "talbruk:inn_room",
+                    "glimpse": "A door leads back to your room."
+                }
+            ]
+        },
+        {
+            "id": "inn",
+            "name": "Talbruk Inn",
+            "description": "A low murmur can be heard among patrons. A barmaid smiles your way.",
+            "exits":
+            [
+                {
+                    "direction": "south",
+                    "destination": "talbruk:inn_upstairs",
+                    "glimpse": "Stairs lead to rooms upstairs."
+                }
+            ]
+        }
+    ]
+}

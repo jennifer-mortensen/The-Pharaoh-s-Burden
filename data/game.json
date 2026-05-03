@@ -1,0 +1,11 @@
+{
+    "version": "1.0",
+    "zones":
+    [
+        "talbruk",
+        "desert",
+        "pyramid",
+        "amenkhara"
+    ],
+    "start_room": "talbruk:inn_room"
+}
