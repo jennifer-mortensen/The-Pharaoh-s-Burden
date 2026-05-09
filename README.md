@@ -1,4 +1,4 @@
-##Historia: The Pharaoh's Burden
+## Historia: The Pharaoh's Burden
 
 A C++ text adventure set in the world of Historia, a personal RPG project in development. Intended as a small standalone story set in the same universe.
 
